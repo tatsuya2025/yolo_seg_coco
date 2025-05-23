@@ -4,4 +4,4 @@ from ultralytics import YOLO
 model = YOLO("yolo11n-seg.yaml").load("yolo11n.pt")  # build from YAML and transfer weights
 
 # Train the model
-results = model.train(data="coco8-seg.yaml", epochs=100, imgsz=640)
+results = model.train(data="coco8-seg.yaml", epochs=10, imgsz=640)
